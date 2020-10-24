@@ -51,8 +51,7 @@ namespace DBCurse.Models
        static public ObservableCollection<string> PositionsCollection { get; set; }
         static DataModel()
         {
-            //DBConnection = new MySqlConnection("server=82.179.88.34; port=3306; Uid=IAS15.VasiljhevKA; Pwd=K?s3jF2}J_; database=IAS15_VasiljhevKA; charset=utf8");
-            DBConnection = new MySqlConnection("server=82.179.88.34; port=3306; Uid=IAS15.VasiljhevKA; Pwd=K?s3jF2}J_; database=IAS15_VasiljhevKA; charset=utf8");
+            DBConnection = new MySqlConnection("server=83.173.83.33; port=3306; Uid=IAS15.VasiljhevKA; Pwd=pass; database=IAS15_VasiljhevKA; charset=utf8");
             DBConnection.Open();
 
             Clients = new ObservableCollection<Client>();

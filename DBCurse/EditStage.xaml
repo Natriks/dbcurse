@@ -1,0 +1,23 @@
+﻿<Window x:Class="DBCurse.EditStage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBCurse"
+        mc:Ignorable="d"
+        Title="Редактировать стадию" Height="165.922" Width="300" Icon="Images/Project.png" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="146"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Ок" Margin="0,0,10,10" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Grid.Column="1" Click="button_Click"/>
+        <DatePicker x:Name="datePicker_EndDate" Margin="0,67,7,0" Text="{Binding EndDate}" VerticalAlignment="Top" Height="24" Grid.Column="1"/>
+        <DatePicker x:Name="datePicker_StartDate" Margin="0,38,7,0" Text="{Binding StartDate}" VerticalAlignment="Top" Height="24" Grid.Column="1"/>
+        <TextBox x:Name="textBox" Text="{Binding Name}" Height="23" Margin="0,10,7,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label" Content="Название стадии" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label x:Name="label_Copy" Content="Дата начала" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label x:Name="label_Copy1" Content="Дата окончания" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="131"/>
+
+    </Grid>
+</Window>

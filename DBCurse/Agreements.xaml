@@ -1,0 +1,63 @@
+﻿<Window x:Class="DBCurse.Agreements"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBCurse"
+        xmlns:models="clr-namespace:DBCurse.Models"
+        xmlns:views="clr-namespace:DBCurse.Views"
+        mc:Ignorable="d"
+        Title="Договора" Height="300" Width="622.942" Icon="Images/Agreement.png">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}" x:Key="ToolButton">
+            <Style.Resources>
+                <Style TargetType="{x:Type Image}">
+                    <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+                    <Setter Property="RenderOptions.EdgeMode" Value="Unspecified"/>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="Width" Value="24"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Border.CornerRadius" Value="4"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="93"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="54"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Button_AddAgreement" HorizontalAlignment="Left" Margin="4,5,0,0" VerticalAlignment="Top" Width="26" Height="26" Style="{StaticResource ToolButton}" ToolTip="Добавить" Background="#FFE4E4E4" Click="Button_AddAgreement_Click">
+                <Image Source="Images/Add.png" Margin="0, 0, 0, 0"/>
+            </Button>
+            <Button x:Name="Button_DeleteAgreement" HorizontalAlignment="Right" Margin="0,5,32,0" Width="26" Height="26" Style="{StaticResource ToolButton}" ToolTip="Удалить" VerticalAlignment="Top" Background="#FFE4E4E4" Click="Button_DeleteAgreement_Click">
+                <Image Source="Images/Delete.png" Margin="0, 0, 0, 0"/>
+            </Button>
+            <Button x:Name="Button_EditAgreement" HorizontalAlignment="Left" Margin="65,5,0,0" Width="26" Height="26" Style="{StaticResource ToolButton}" ToolTip="Редактировать" VerticalAlignment="Top" Background="#FFE4E4E4" Click="Button_EditAgreement_Click">
+                <Image Source="Images/Edit.png" Margin="0, 0, 0, 0"/>
+            </Button>
+            <TextBox Height="28" Margin="3,3,10,0" TextWrapping="Wrap" Text="{Binding FilterText,UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        </Grid>
+        <DataGrid x:Name="dataGrid" Margin="10,0,10,10" Background="#FFE4E4E4" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False" SelectionMode="Single" Grid.ColumnSpan="2" ItemsSource="{Binding Items}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="№ Договора" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding ClientName}" Header="Заказчик" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Amount}" Header="Сумма" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Date}" Header="Дата начала" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Deadline}" Header="Дата окончания" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Description}" Header="Описание" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

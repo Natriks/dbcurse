@@ -1,0 +1,38 @@
+﻿<Window x:Class="DBCurse.AddProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBCurse"
+        mc:Ignorable="d"
+        Title="Редактировать проект" Height="466.435" Width="379.559" ResizeMode="NoResize" Icon="Images/Project.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Название" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="126" Height="27"/>
+        <Label x:Name="label_Copy" Content="Тип" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="126" Height="26"/>
+        <Label x:Name="label_Copy1" Content="Договор №" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="126" Height="27"/>
+        <Label x:Name="label_Copy2" Content="Ответственный" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="126" Height="26"/>
+        <Label x:Name="label_Copy3" Content="Дата начала" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="126" Height="27"/>
+        <Label x:Name="label_Copy4" Content="Описание :" HorizontalAlignment="Left" Margin="10,283,0,0" VerticalAlignment="Top" Width="126" Height="26"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,12,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="textBox_Copy4" Margin="10,314,10,39" TextWrapping="Wrap" Text="{Binding Description}" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Ок" Margin="0,0,10,10" Grid.Column="1" Height="24" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Click="button_Click"/>
+        <Label x:Name="label_Copy5" Content="Дата окончания" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Width="126" Height="27"/>
+        <DatePicker Name="DatePicker_StartDate" Grid.Column="1" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Text="{Binding StartDate}" Width="199" Height="24"/>
+        <DatePicker Name="DatePicker_EndDate"   Grid.Column="1" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Text="{Binding EndDate}" Width="199" Height="24"/>
+        <ComboBox x:Name="comboBox_Responcible" Height="24" Grid.Column="1" IsEditable="True" Text="{Binding ResponsibleName}" HorizontalAlignment="Left"  Margin="10,92,0,0" VerticalAlignment="Top" Width="170"/>
+        <ComboBox x:Name="comboBox_IDAgreement" Height="24" Grid.Column="1" IsEditable="True" Text="{Binding AgreementID}" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="170"/>
+        <ComboBox x:Name="comboBox_ProjectType" Height="24" Grid.Column="1" IsEditable="False" Text="{Binding TypeName}" HorizontalAlignment="Left" Margin="10,39,0,0"  VerticalAlignment="Top" Width="199"/>
+        <Button x:Name="button1_AddAgreement" Content="+" Grid.Column="1" HorizontalAlignment="Left" Margin="185,65,0,0" VerticalAlignment="Top" Width="24" Height="24" Click="button1_AddAgreement_Click"/>
+        <Button x:Name="button1_AddWorker" Content="+" Grid.Column="1" HorizontalAlignment="Left" Margin="185,92,0,0" VerticalAlignment="Top" Width="24" Height="24" Click="button1_AddWorker_Click"/>
+        <Label x:Name="label_Copy6" Content="Необходимые  &#xD;&#xA;должности:" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" Width="126" Height="48"/>
+        <ComboBox x:Name="comboBox_ProjectType_Copy" Height="24" Grid.Column="1" IsEditable="False" Margin="10,174,40,0"  VerticalAlignment="Top"/>
+        <Button x:Name="button1_AddProjectType_Copy" Content="+" Grid.Column="1" HorizontalAlignment="Left" Margin="185,174,0,0" VerticalAlignment="Top" Width="24" Height="24" Click="button1_AddProjectType_Copy_Click"/>
+        <ListBox x:Name="listBox" Grid.Column="1" Margin="10,203,40,129"/>
+        <Button x:Name="button1_DeletePosition" Content="-" Grid.Column="1" Margin="185,203,0,129" Click="button1_DeletePosition_Click" HorizontalAlignment="Left" Width="24"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DBCurse.DataAdapters.AgreementsDataAdapter">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAYgEAAAgAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\AgreementsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ClientsDataAdapter">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAACAAAAAAAAEAGAAAAAAIAAAAAAA=</HashCode>
+      <FileName>DataAdapters\ClientsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.DataAdapter" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAUAAAAAAAAAAAACAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DataAdapters\DataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.DepartmentsDataAdapter">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAIAAQgAAACAAAAAAAAEACAAAAAAAIAAAAAA=</HashCode>
+      <FileName>DataAdapters\DepartmentsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.InvestmentsDataAdapter">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAQAAAAAAAAAAAAEADAAAAAAAAAAIAAA=</HashCode>
+      <FileName>DataAdapters\InvestmentsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.InvestorsDataAdapter">
+    <Position X="15" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAgCAAAAAAAAAEACAAAAAAAAQAAAAA=</HashCode>
+      <FileName>DataAdapters\InvestorsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.OperationsDataAdapter">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAACAAABAAAAAAAAAAAAAAUACAAAAAAAAAIAAAA=</HashCode>
+      <FileName>DataAdapters\OperationsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProjectsDataAdapter">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAgAAAABAAAAAAAEECAAACAAAAAQAAwA=</HashCode>
+      <FileName>DataAdapters\ProjectsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.StagesDataAdapter">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAABAAAAAEBCAAAAAgAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\StagesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.WorkersDataAdapter">
+    <Position X="11.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAgAQAAAAAAAkACAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DataAdapters\WorkersDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Models.Agreement" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAEgAAAAIAAAAACAgAAAgAABQAEAAQABAAA=</HashCode>
+      <FileName>Models\Agreement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Client" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAgAAAgIAAAAAQAgAgEAAAIBIAAAACAAAA=</HashCode>
+      <FileName>Models\Client.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.DataModel" Collapsed="true">
+    <Position X="23.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>MEEAOjAKMAAIBAAgACgAAAAEEAABBAABoShgIQAACQA=</HashCode>
+      <FileName>Models\DataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Models.Department" Collapsed="true">
+    <Position X="23.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAQQkAAEAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Models\Department.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Investment" Collapsed="true">
+    <Position X="23.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAACAgAAAgAAAAIAAAACAAAA=</HashCode>
+      <FileName>Models\Investment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Investor" Collapsed="true">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAgAAAgIAAAAAQAgAgEAAAIBIAAAACAAAA=</HashCode>
+      <FileName>Models\Investor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Operation" Collapsed="true">
+    <Position X="25.25" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAIAAAEACAgAAAgAABAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Operation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Project" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QMACgACAAIVgAAAEICCAAAQwkAAEQBAAAAAQCEACAIA=</HashCode>
+      <FileName>Models\Project.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Stage" Collapsed="true">
+    <Position X="25.25" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAAICAAAAQggAAEAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\Stage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Models.Worker" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACACAAAAACABAIAgIQCEAAwAhAIMABAiAIAQoACgAJA=</HashCode>
+      <FileName>Models\Worker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.Views.ActiveProjectsViewModel" Collapsed="true">
+    <Position X="27.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQgAACAAAAAAAAAAAAAQAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Views\ActiveProjectsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.AgreementsViewModel" Collapsed="true">
+    <Position X="29.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAACASAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AgreementsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.ClientsViewModel" Collapsed="true">
+    <Position X="29.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAASAAACAAAAAAAQAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Views\ClientsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.InvestorsViewModel" Collapsed="true">
+    <Position X="27.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAASAAACAAAAAAAQAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\InvestorsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.ProjectsViewModel" Collapsed="true">
+    <Position X="29.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAASgAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ProjectsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.WorkersViewModel" Collapsed="true">
+    <Position X="27.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAASAAACAAAAAAAQAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Views\WorkersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.ProductiveModel.ProductAttribute" Collapsed="true">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIBAAAAQAgAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>ProductiveModel\ProductAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.ProductiveModel.ProductAttributeValue" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACGAAAABgQAACAMgAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductiveModel\ProductAttributeValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.ProductiveModel.Productive" Collapsed="true">
+    <Position X="23.5" Y="6.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAEAAABQAAAAUIABAAAAAwAAAAAAAQAAAEAAAAAA=</HashCode>
+      <FileName>ProductiveModel\Productive.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.ProductiveModel.ProductiveSolver" Collapsed="true">
+    <Position X="25.25" Y="6.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAAChCCBEIAEAkIAIASDAAQAgEAAAAAAAgQIQAACA=</HashCode>
+      <FileName>ProductiveModel\ProductiveSolver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.ViewModelFilter" Collapsed="true">
+    <Position X="28.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ViewModelFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Views.OperationsViewModel" Collapsed="true">
+    <Position X="27.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAASAAACAAAAAAAQAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\OperationsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.PositionsDataAdapter">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAQAAAAAABAAgAAAAAAAAAAEACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\PositionsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProductAttributesDataAdapter">
+    <Position X="11.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAACAAEAAAAAAAAAAAAAAAEACAAAAAAAAgAAAAA=</HashCode>
+      <FileName>DataAdapters\ProductAttributesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProductAttrValuesDataAdapter">
+    <Position X="15" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAEAAAAAAAAAAAAAAAAAEACAAAAABAAAAAACA=</HashCode>
+      <FileName>DataAdapters\ProductAttrValuesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProductivesDataAdapter">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAcAAAAAAAAAAAAAAAhAAAAAAAEACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\ProductivesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProjectParticipationDataAdapter">
+    <Position X="4.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAABAAAAAAAAAAgAAAAAAAEACAAAQAAAAAAACAA=</HashCode>
+      <FileName>DataAdapters\ProjectParticipationDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProjectStagesDataAdapter">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAQAAAAAAAgAAAAAEACAAAAAIAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\ProjectStagesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProjectTypesDataAdapter">
+    <Position X="9.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAIAAAAAAEAAEACAAAAAAAAAAgAAA=</HashCode>
+      <FileName>DataAdapters\ProjectTypesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.WorkersInDepartmentsDataAdapter">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAgAAAAAAAgABAAAAAAAAAAEACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\WorkersInDepartmentsDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

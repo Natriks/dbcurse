@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DBCurse.ProductiveModel.ProductAttribute">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIBAAAAQAgAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>ProductiveModel\ProductAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.ProductiveModel.ProductAttributeValue">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACGAAAABgQAACAMgAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductiveModel\ProductAttributeValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.ProductiveModel.Productive">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAEAAABQAAAAUIABAAAAAwAAAAAAAQAAAEAAAAAA=</HashCode>
+      <FileName>ProductiveModel\Productive.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProductAttributesDataAdapter">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAACAAEAAAAAAAAAAAAAAAEACAAAAAAAAgAAAAA=</HashCode>
+      <FileName>DataAdapters\ProductAttributesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProductAttrValuesDataAdapter">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAEAAAAAAAAAAAAAAAAAEACAAAAABAAAAAACA=</HashCode>
+      <FileName>DataAdapters\ProductAttrValuesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.ProductivesDataAdapter">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAcAAAAAAAAAAAAAAAhAAAAAAAEACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAdapters\ProductivesDataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.DataAdapters.DataAdapter" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAUAAAAAAAAAAAACAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DataAdapters\DataAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.Models.DataModel" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>MEEAOjAKMAAIBAAgACgAAAAEEAABBAABoShgIQAACQA=</HashCode>
+      <FileName>Models\DataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBCurse.ProductiveRules">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAABAAACAAAA=</HashCode>
+      <FileName>ProductiveRules.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBCurse.EditProdRuleAttributes">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EditProdRuleAttributes.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

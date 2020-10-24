@@ -1,0 +1,59 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBCurse"
+        xmlns:Models="clr-namespace:DBCurse.Models" x:Class="DBCurse.EditProjectParticipation"
+        mc:Ignorable="d"
+        Title="Участие сотрудников в проектах" Height="238.13" Width="475.871" Icon="Images/Worker.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="52"/>
+            <RowDefinition/>
+            <RowDefinition Height="55"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button_AddWorkerToDepartment" Grid.Column="2" Grid.Row="2" Height="25" VerticalAlignment="Top" Click="button_AddWorkerToDepartment_Click">
+            <Image Source="Images/LeftArrow.png" Margin="0, 0, 0, 0"/>
+        </Button>
+        <Button x:Name="button_DeleteWorkerFromDepartment" Grid.Column="2" Grid.Row="2" Height="25" VerticalAlignment="Bottom" Click="button_DeleteWorkerFromDepartment_Click">
+            <Image Source="Images/RightArrow.png" Margin="0, 0, 0, 0"/>
+        </Button>
+        <DataGrid x:Name="dataGrid_Workers" Margin="10" IsReadOnly="True" AutoGenerateColumns="False" SelectionMode="Single" ItemsSource="{Binding Items}" Grid.Column="3" Grid.Row="1" Grid.RowSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Surname}" Header="Фамилия" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Имя" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Patronomic}" Header="Отчество" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding PositionName}" Header="Должность" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="dataGrid_Projects" Margin="10" IsReadOnly="True" AutoGenerateColumns="False" SelectionMode="Single" ItemsSource="{Binding Items}" Grid.RowSpan="3" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Название" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding TypeName}" Header="Тип" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding ResponsibleName}" Header="Ответственный" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="dataGrid_WorkersInDepartments" Margin="10,10,9,10" IsReadOnly="True" AutoGenerateColumns="False" SelectionMode="Single" ItemsSource="{Binding SelectedItem.WorkersCollection, ElementName=dataGrid_Projects}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Surname}" Header="Фамилия" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Имя" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Patronomic}" Header="Отчество" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding PositionName}" Header="Должность" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="textBox_Workers" Height="24" Margin="11,28,10,0" TextWrapping="Wrap" Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" VerticalAlignment="Top" Grid.Column="3"/>
+        <TextBox x:Name="textBox_Projects" Height="24" Margin="10,28,10,0" TextWrapping="Wrap" Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Поиск проекта" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="28" Width="128"/>
+        <Label x:Name="label_Copy" Content="Поиск сотрудника" HorizontalAlignment="Left" Margin="11,0,0,0" VerticalAlignment="Top" Height="28" Width="127" Grid.Column="3"/>
+        <Label x:Name="label1" Content="Сотрудники в проекте" Grid.Column="1" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="138" Height="24"/>
+
+    </Grid>
+</Window>

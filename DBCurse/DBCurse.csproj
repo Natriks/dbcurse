@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05E326B0-94C4-4950-8947-D48DB9ADC37E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBCurse</RootNamespace>
+    <AssemblyName>DBCurse</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MainIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.4\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddAgreement.xaml.cs">
+      <DependentUpon>AddAgreement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddClient.xaml.cs">
+      <DependentUpon>AddClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddDepartment.xaml.cs">
+      <DependentUpon>AddDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddInvestor.xaml.cs">
+      <DependentUpon>AddInvestor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddOperation.xaml.cs">
+      <DependentUpon>AddOperation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductiveRule.xaml.cs">
+      <DependentUpon>AddProductiveRule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddProject.xaml.cs">
+      <DependentUpon>AddProject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddWorker.xaml.cs">
+      <DependentUpon>AddWorker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Agreements.xaml.cs">
+      <DependentUpon>Agreements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataAdapters\AgreementsDataAdapter.cs" />
+    <Compile Include="DataAdapters\ClientsDataAdapter.cs" />
+    <Compile Include="DataAdapters\DataAdapter.cs" />
+    <Compile Include="DataAdapters\DepartmentsDataAdapter.cs" />
+    <Compile Include="DataAdapters\InvestmentsDataAdapter.cs" />
+    <Compile Include="DataAdapters\InvestorsDataAdapter.cs" />
+    <Compile Include="DataAdapters\OperationsDataAdapter.cs" />
+    <Compile Include="DataAdapters\PositionsDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProductAttributesDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProductAttrValuesDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProductivesDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProjectParticipationDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProjectsDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProjectStagesDataAdapter.cs" />
+    <Compile Include="DataAdapters\ProjectTypesDataAdapter.cs" />
+    <Compile Include="DataAdapters\StagesDataAdapter.cs" />
+    <Compile Include="DataAdapters\WorkersDataAdapter.cs" />
+    <Compile Include="DataAdapters\WorkersInDepartmentsDataAdapter.cs" />
+    <Compile Include="EditCompanyStructure.xaml.cs">
+      <DependentUpon>EditCompanyStructure.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditProdRuleAttributes.xaml.cs">
+      <DependentUpon>EditProdRuleAttributes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditProjectParticipation.xaml.cs">
+      <DependentUpon>EditProjectParticipation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditStage.xaml.cs">
+      <DependentUpon>EditStage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialAccounting.xaml.cs">
+      <DependentUpon>FinancialAccounting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Agreement.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Clients.xaml.cs">
+      <DependentUpon>Clients.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Investors.xaml.cs">
+      <DependentUpon>Investors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Investment.cs" />
+    <Compile Include="Models\Investor.cs" />
+    <Compile Include="Models\Operation.cs" />
+    <Compile Include="Models\Position.cs" />
+    <Compile Include="Models\ProjectParticipation.cs" />
+    <Compile Include="Models\ProjectStage.cs" />
+    <Compile Include="Models\WorkersInDepartment.cs" />
+    <Compile Include="ProductiveModel\ProductAttribute.cs" />
+    <Compile Include="ProductiveModel\ProductAttributeValue.cs" />
+    <Compile Include="ProductiveModel\Productive.cs" />
+    <Compile Include="Models\ProjectType.cs" />
+    <Compile Include="Models\Stage.cs" />
+    <Compile Include="Models\Worker.cs" />
+    <Compile Include="Operations.xaml.cs">
+      <DependentUpon>Operations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="ProductiveModel\ProductiveSolver.cs" />
+    <Compile Include="ProductiveRules.xaml.cs">
+      <DependentUpon>ProductiveRules.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.xaml.cs">
+      <DependentUpon>Projects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStages.xaml.cs">
+      <DependentUpon>ProjectStages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjParticipation.xaml.cs">
+      <DependentUpon>ProjParticipation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActiveProjectsViewModel.cs" />
+    <Compile Include="Views\AgreementsViewModel.cs" />
+    <Compile Include="Views\ClientsViewModel.cs" />
+    <Compile Include="Views\InvestorsViewModel.cs" />
+    <Compile Include="Views\OperationsViewModel.cs" />
+    <Compile Include="Views\ProjectsViewModel.cs" />
+    <Compile Include="Views\ViewModelFilter.cs" />
+    <Compile Include="Views\WorkersViewModel.cs" />
+    <Compile Include="WorkerParticipation.xaml.cs">
+      <DependentUpon>WorkerParticipation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Workers.xaml.cs">
+      <DependentUpon>Workers.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddAgreement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddInvestor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddOperation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddProductiveRule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddWorker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Agreements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Clients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditCompanyStructure.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditProdRuleAttributes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditProjectParticipation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditStage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinancialAccounting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Investors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Operations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductiveRules.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Projects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProjectStages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProjParticipation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WorkerParticipation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Workers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlTransaction.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlParameterCollection.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlParameter.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlHelper.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlException.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlDataReader.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlDataAdapter.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlConnectionStringBuilder.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlConnection.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlCommandBuilder.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\MySqlCommand.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MW_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Agreement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Investor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ProdRule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ProjPart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WorkPart.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
